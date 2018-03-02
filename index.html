@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hover In/Out</title>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script>
+            $(document).ready(function(){
+                $("img").hover(
+                    function(){
+                        $(this).attr("src",$(this).attr("alt_src"));
+                    },
+                    function(){
+                        $(this).attr("src",$(this).attr("main_src"));
+                    }
+                )
+            });
+        </script>
+    </head>
+    <body>
+        <img src="vox_machina.jpg" main_src="vox_machina.jpg" alt_src="keyleth.jpg">
+        <img src="vox_machina.jpg" main_src="vox_machina.jpg" alt_src="keyleth.jpg">
+        <img src="vox_machina.jpg" main_src="vox_machina.jpg" alt_src="keyleth.jpg">
+        <img src="vox_machina.jpg" main_src="vox_machina.jpg" alt_src="keyleth.jpg">
+    </body>
+</html>
